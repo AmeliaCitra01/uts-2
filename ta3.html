@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ID">
+<head>
+  <title>Panel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=ede,chrome=1">
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <style>
+      /* Adjust the width of the reveal menu. */
+      #demo-page #left-panel.ui-panel {
+        width: 15em;
+      }
+      #demo-page #left-panel.ui-panel-closed {
+        width: 0;
+      }
+      #demo-page .ui-panel-page-content-position-left,
+      .ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+        left: 15em;
+        right: -15em;
+      }
+      #demo-page .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal{
+        left: 0;
+        right: 0;
+        -webkit-transform: translated3d(15em,0,0);
+        -moz-transform: translated3d(15em,0,0);
+        transform: translate3d(15em, 0, 0);
+      }
+
+      /* Listview with collapsible list items. */
+      .ui-listview > li .ui-collapsible-heading {
+        margin: 0;
+      }
+      .ui-collapsible.ui-li-static {
+        padding: 0;
+        border: none !important;
+      }
+      .ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn {
+        border-top: none !important;
+      }
+      /* Nested list button colors */
+      .ui-listview .ui-listview .ui-btn {
+        background: #fff;
+      }
+      .ui-listview .ui-listview .ui-btn:hover {
+        background: #f5f5f5;
+      }
+      .ui-listview .ui-listview .ui-btn:active {
+        background: #f1f1f1;
+      }
+
+      /* Reveal panel shadow on top of the listview menu (only to be used if you don't use fixed toolbars) */
+      #demo-page .ui-panel-display-reveal {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+      #demo-page .ui-panel-page-content-position-left {
+        -webkit-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+        -moz-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+        box-shadow: -5px 0px 5px rgba(0, 0, 0, .15);
+      }
+
+      /* Setting a custom background image. */
+      #demo-page.ui-page-theme-a,
+      #demo-page .ui-panel-wrapper {
+        background-color: #fff;
+        background-image: url("../_assets/img/bg-pattern.png");
+        background-repeat: repeat-x;
+        background-position: left bottom;
+      }
+
+      /* Styling of the page contents */
+      .article p{
+        margin: 0 0 1em;
+        line-height: 1.5;
+      }
+      .article p img {
+        max-width: 100%;
+      }
+      .article p:first-child {
+        text-align: center;
+      }
+      .article small{
+        display: block;
+        font-size: 75%;
+        color: #c0c0c0;
+      }
+  .article p:last-child {
+  text-align: right;
+}
+.article a.ui-btn {
+  margin-right: 2em;
+}
+@media all and (min-width:769px) {
+  .article {
+    max-width: 994px;
+    margin: 0 auto;
+    padding-top: 4em;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+  }
+  /* Fix for issue with buttons and form elements
+  if CSS columns are used on a page with a panel. */
+  .article a.ui-btn {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+  </style>
+</head>
+<body>
+  <div data-role="page" id="demo-page" data-url="demo-page">
+    <div data-role="header">
+      <h1>𝕊𝕖𝕡𝕒𝕥𝕦 𝕍𝕠𝕝𝕚</h1>
+      <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+<div role="main" class="ui-content">
+
+       <div class="ui-field-contain">
+          
+          <input type="search" name="search-1" id="search-1" value="">
+        </div>
+        <center><p> 𝑺𝒆𝒑𝒂𝒕𝒖 𝑽𝒐𝒍𝒊 </p></center>
+        <br>
+        <center><a href="#popupv1" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://img.my-best.id/press_eye_catches/0d7d78868045858dd8e90808ec140df7.jpg?ixlib=rails-4.2.0&q=70&lossless=0&w=1400&h=787&fit=crop" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupv1" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="ta3.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://img.my-best.id/press_eye_catches/0d7d78868045858dd8e90808ec140df7.jpg?ixlib=rails-4.2.0&q=70&lossless=0&w=1400&h=787&fit=crop" style="max-height: 512px;" alt="Paris, France"></center>
+        <center><p>𝐒𝐞𝐩𝐚𝐭𝐮 𝐕𝐨𝐥𝐢 𝐏𝐫𝐢𝐚</p></center>
+        <center><p>𝕽𝖕 450.000</p></center>
+        
+
+         <center><a href="#popupv2" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://s3.bukalapak.com/uploads/content_attachment/8eb58df31471091b133092c5/original/Main-foto.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupv2" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="ta3.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://s3.bukalapak.com/uploads/content_attachment/8eb58df31471091b133092c5/original/Main-foto.jpg" style="max-height: 512px;" alt="Paris, France"></center>
+        <center><p>𝐒𝐞𝐩𝐚𝐭𝐮 𝐕𝐨𝐥𝐢 𝐌𝐢𝐳𝐮𝐧𝐨</p></center>
+        <center><p>𝕽𝖕 700.000</p></center>
+
+        <br>
+        <br>
+        <center><a href="#popupv3" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://ceklist.id/wp-content/uploads/2022/04/Sepatu-Voli-Pria-Terbaik.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupv3" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="ta3.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://ceklist.id/wp-content/uploads/2022/04/Sepatu-Voli-Pria-Terbaik.jpg" style="max-height: 512px;" alt="Paris, France"> </center>
+        <center><p>𝐒𝐞𝐩𝐚𝐭𝐮 𝐕𝐨𝐥𝐢 𝐏𝐫𝐢𝐚</p></center>
+        <center><p>𝕽𝖕 400.000</p></center>
+        
+        <br>
+        <br>
+        <center><a href="#popupv4" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://images.tokopedia.net/img/cache/500-square/hDjmkQ/2022/7/28/7fedac14-068c-40a9-a567-3fdeb651bba1.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupv4" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="ta3.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://images.tokopedia.net/img/cache/500-square/hDjmkQ/2022/7/28/7fedac14-068c-40a9-a567-3fdeb651bba1.jpg" style="max-height: 512px;" alt="Paris, France"></center>
+        <center><p>𝐒𝐞𝐩𝐚𝐭𝐮 𝐕𝐨𝐥𝐢 𝐌𝐢𝐳𝐮𝐧𝐨 𝐖𝐚𝐧𝐢𝐭𝐚</p></center>
+        <center><p>𝕽𝖕 760.000</p></center>
+        
+
+       
+      </div><!-- /article-->
+    </div><!-- /content-->
+
+    <div data-role="panel" id="left-panel">
+      <ul data-role="listview">
+        <li data-icon="home"><a href="index.html" rel="external" data-rel="close">Dashboard</a></li>
+        <li data-icon ="delete"><a href="ta1.html" rel="external" data-rel="back">Close</a></li>
+        <li data-role="list-divider">Kategori</li>
+        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+          <h3>Sepatu</h3>
+          <ul data-role="listview">
+        <li><a href="ta1.html" rel="external" style="background-color:#AEBDCA;">Sepatu Futsal</a></li>
+        <li><a href="ta2.html" rel="external" style="background-color:#AEBDCA;">Sepatu Badminton</a></li>
+        <li><a href="ta3.html" rel="external" style="background-color:#AEBDCA;">Sepatu Voli</a></li>
+      </ul>
+    </li><!-- /collapsible-->
+    <li data-role="collapsible" data-inset="false" data-iconpos="right">
+      <h3>Jersey</h3>
+      <ul data-role="listview">
+        <li><a href="jerseyfutsal.html" rel="external" style="background-color:#AEBDCA;">Jersey Futsal</a></li>
+        <li><a href="jerseybadminton.html" rel="external" style="background-color:#AEBDCA;">Jersey Badminton</a></li>
+      
+      </ul>
+    </li><!-- /collapsible-->
+    <li data-role="collapsible" data-inset="false" data-iconpos="right">
+      
+  </div><!-- /panel --->
+
+  
+  </div>
+</body>
+</html>

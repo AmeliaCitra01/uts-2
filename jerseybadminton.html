@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ID">
+<head>
+  <title>Panel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=ede,chrome=1">
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <style>
+      /* Adjust the width of the reveal menu. */
+      #demo-page #left-panel.ui-panel {
+        width: 15em;
+      }
+      #demo-page #left-panel.ui-panel-closed {
+        width: 0;
+      }
+      #demo-page .ui-panel-page-content-position-left,
+      .ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+        left: 15em;
+        right: -15em;
+      }
+      #demo-page .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal{
+        left: 0;
+        right: 0;
+        -webkit-transform: translated3d(15em,0,0);
+        -moz-transform: translated3d(15em,0,0);
+        transform: translate3d(15em, 0, 0);
+      }
+
+      /* Listview with collapsible list items. */
+      .ui-listview > li .ui-collapsible-heading {
+        margin: 0;
+      }
+      .ui-collapsible.ui-li-static {
+        padding: 0;
+        border: none !important;
+      }
+      .ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn {
+        border-top: none !important;
+      }
+      /* Nested list button colors */
+      .ui-listview .ui-listview .ui-btn {
+        background: #fff;
+      }
+      .ui-listview .ui-listview .ui-btn:hover {
+        background: #f5f5f5;
+      }
+      .ui-listview .ui-listview .ui-btn:active {
+        background: #f1f1f1;
+      }
+
+      /* Reveal panel shadow on top of the listview menu (only to be used if you don't use fixed toolbars) */
+      #demo-page .ui-panel-display-reveal {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+      #demo-page .ui-panel-page-content-position-left {
+        -webkit-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+        -moz-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+        box-shadow: -5px 0px 5px rgba(0, 0, 0, .15);
+      }
+
+      /* Setting a custom background image. */
+      #demo-page.ui-page-theme-a,
+      #demo-page .ui-panel-wrapper {
+        background-color: #fff;
+        background-image: url("../_assets/img/bg-pattern.png");
+        background-repeat: repeat-x;
+        background-position: left bottom;
+      }
+
+      /* Styling of the page contents */
+      .article p{
+        margin: 0 0 1em;
+        line-height: 1.5;
+      }
+      .article p img {
+        max-width: 100%;
+      }
+      .article p:first-child {
+        text-align: center;
+      }
+      .article small{
+        display: block;
+        font-size: 75%;
+        color: #c0c0c0;
+      }
+  .article p:last-child {
+  text-align: right;
+}
+.article a.ui-btn {
+  margin-right: 2em;
+}
+@media all and (min-width:769px) {
+  .article {
+    max-width: 994px;
+    margin: 0 auto;
+    padding-top: 4em;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+  }
+  /* Fix for issue with buttons and form elements
+  if CSS columns are used on a page with a panel. */
+  .article a.ui-btn {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+  </style>
+</head>
+<body>
+  <div data-role="page" id="demo-page" data-url="demo-page">
+    <div data-role="header">
+      <h1>𝕁𝕖𝕣𝕤𝕖𝕪 𝔹𝕒𝕕𝕞𝕚𝕟𝕥𝕠𝕟</h1>
+      <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+<div role="main" class="ui-content">
+
+       <div class="ui-field-contain">
+          
+          <input type="search" name="search-1" id="search-1" value="">
+        </div>
+        <center><p> 𝑱𝒆𝒓𝒔𝒆𝒚 𝑩𝒂𝒅𝒎𝒊𝒏𝒕𝒐𝒏 </p></center>
+        <br>
+        <center><a href="#popupSepatuFutsal1" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/18/3f02c4c0-a6f3-4de4-a90a-ea1a82ca19cf.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupSepatuFutsal1" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="jerseybadminton.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/18/3f02c4c0-a6f3-4de4-a90a-ea1a82ca19cf.jpg" style="max-height: 512px;" alt="Paris, France"></center>
+        <center><p>𝐉𝐞𝐫𝐬𝐞𝐲 𝐁𝐚𝐝𝐦𝐢𝐧𝐭𝐨𝐧 𝐓𝐡𝐞 𝐃𝐚𝐝𝐝𝐢𝐞𝐬 𝐕𝐢𝐜𝐭𝐨𝐫</p></center>
+        <center><p>𝕽𝖕 120.000</p></center>
+        <br>
+         <center><a href="#popupSepatuFutsal2" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//106/MTA-48380909/no_jersey_badminton_victor_indonesia_masters_open_baju_bulu_tangkis_kaos_bulutangkis_full02_kyw9dpkn.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupSepatuFutsal2" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="jerseybadminton.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//106/MTA-48380909/no_jersey_badminton_victor_indonesia_masters_open_baju_bulu_tangkis_kaos_bulutangkis_full02_kyw9dpkn.jpg" style="max-height: 512px;" alt="Paris, France"></center>
+        <center><p>𝐉𝐞𝐫𝐬𝐞𝐲 𝐁𝐚𝐝𝐦𝐢𝐧𝐭𝐨𝐧 𝐀𝐥𝐥 𝐄𝐧𝐠𝐥𝐚𝐧𝐝 𝐕𝐢𝐜𝐭𝐨𝐫</p></center>
+        <center><p>𝕽𝖕 130.000</p></center>
+        
+        <br>
+        <br>
+        <center><a href="#popupSepatuFutsal3" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//105/MTA-38498532/100kaos_jersey_badminton_indonesia-_jersey_olahraga_pria-_jersey_olahraga_timnas-_jersey_timnas_indonesia-_bulutangkis_pria-_bulutangkis_wanita-_olahraga__01_full01_q04yz04z.jpg" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupSepatuFutsal3" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="jerseybadminton.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//105/MTA-38498532/100kaos_jersey_badminton_indonesia-_jersey_olahraga_pria-_jersey_olahraga_timnas-_jersey_timnas_indonesia-_bulutangkis_pria-_bulutangkis_wanita-_olahraga__01_full01_q04yz04z.jpg" style="max-height: 512px;" alt="Paris, France"> </center>
+        <center><p>𝐉𝐞𝐫𝐬𝐞𝐲 𝐁𝐚𝐝𝐦𝐢𝐧𝐭𝐨𝐧</p></center>
+        <center><p>𝕽𝖕 230.000</p></center>
+        <br>
+        <br>
+        <center><a href="#popupSepatuFutsal4" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lAd4vs-WIsRHEfn-KwmcveRGLwC3nk2xrg&usqp=CAU" alt="" style="width: 70%;"></a>
+        <div data-role="popup" id="popupSepatuFutsal4" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="jerseybadminton.html" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lAd4vs-WIsRHEfn-KwmcveRGLwC3nk2xrg&usqp=CAU" style="max-height: 512px;" alt="Paris, France"> </center>
+        <center><p>𝐉𝐞𝐫𝐬𝐞𝐲 𝐁𝐚𝐝𝐦𝐢𝐧𝐭𝐨𝐧</p></center>
+        <center><p>𝕽𝖕 240.000</p></center>
+
+       
+      </div><!-- /article-->
+    </div><!-- /content-->
+
+   <div data-role="panel" id="left-panel">
+      <ul data-role="listview">
+        <li data-icon="home"><a href="index.html" rel="external" data-rel="close">Dashboard</a></li>
+        <li data-icon ="delete"><a href="ta1.html" rel="external" data-rel="back">Close</a></li>
+        <li data-role="list-divider">Kategori</li>
+        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+          <h3>Sepatu</h3>
+          <ul data-role="listview">
+        <li><a href="ta1.html" rel="external" style="background-color:#AEBDCA;">Sepatu Futsal</a></li>
+        <li><a href="ta2.html" rel="external" style="background-color:#AEBDCA;">Sepatu Badminton</a></li>
+        <li><a href="ta3.html" rel="external" style="background-color:#AEBDCA;">Sepatu Voli</a></li>
+      </ul>
+    </li><!-- /collapsible-->
+    <li data-role="collapsible" data-inset="false" data-iconpos="right">
+      <h3>Jersey</h3>
+      <ul data-role="listview">
+        <li><a href="jerseyfutsal.html" rel="external" style="background-color:#AEBDCA;">Jersey Futsal</a></li>
+        <li><a href="jerseybadminton.html" rel="external" style="background-color:#AEBDCA;">Jersey Badminton</a></li>
+      </ul>
+    </li><!-- /collapsible-->
+    <li data-role="collapsible" data-inset="false" data-iconpos="right">
+      <h3>About</h3>
+      <ul data-role="listview">
+        <li><a href="profil.html" rel="external" style="background-color:#AEBDCA;">Profil</a></li>
+      </ul>
+      </li><!-- /collapsible-->
+    </ul>
+  </div><!-- /panel --->
+  
+  </div>
+</body>
+</html>
